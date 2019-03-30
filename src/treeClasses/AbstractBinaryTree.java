@@ -69,12 +69,13 @@ BinaryTree<E> {
 
 		}
 		else {
-			if(this.left(this.parent(r)).equals(r) ) {
-				System.out.println("__L("+r.getElement()+")"); 
 
+			if( (this.left(this.parent(r))!= null) && this.left(this.parent(r)).equals(r)) {
+				System.out.println("__L("+r.getElement()+")"); 
 			}
+
 			else {
-				if(this.right(this.parent(r)).equals(r) ) {
+				if((!this.right(this.parent(r)).equals(null)) && this.right(this.parent(r)).equals(r)) {
 
 					System.out.println("__R("+r.getElement()+")"); 
 				}
@@ -91,7 +92,7 @@ BinaryTree<E> {
 
 
 	// The following part has to do with Exercise 5.
-	/**
+	
 	// internal method to construct the Iterable<Position<E>> object. 
 	// based on inorder traversal. 
 	protected void fillIterable(Position<E> r, ArrayList<Position<E>> pList) { 
@@ -101,7 +102,7 @@ BinaryTree<E> {
 		if (hasRight(r)) 
 			fillIterable(right(r), pList); 
 	}
-	 **/
+	
 
 
 }
