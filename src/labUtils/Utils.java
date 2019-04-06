@@ -70,12 +70,12 @@ public class Utils {
 	         System.out.println(iter.next()); 
 	} 
 	public static LinkedTree<Character> buildTrieAsLinkedTree() { 
-		   //String[] words = {"sal", "sala", "salado", "salto", "si", "u", "un", "uno"}; 
+		   String[] words = {"sal", "sala", "salado", "salto", "si", "u", "un", "uno"}; 
 
 		   
-		   String[] words = {"aleluya", "aleluyado", "aleta", "aletas", "alerta", 
-		        "alertado", "altercado", "altercados", "altura", "alturo", "alturito", 
-		         "balacera", "bala", "balas", "bala", "balon", "barato"};
+//		   String[] words = {"aleluya", "aleluyado", "aleta", "aletas", "alerta", 
+//		        "alertado", "altercado", "altercados", "altura", "alturo", "alturito", 
+//		         "balacera", "bala", "balas", "bala", "balon", "barato"};
 		   
 		        
 		   LinkedTree<Character> t = new LinkedTree<>(); 
